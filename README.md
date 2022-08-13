@@ -1,3 +1,3 @@
-# react-yveg7b
-
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-yveg7b)
+Uso de states
+props
+y lectura de json usando react-js
