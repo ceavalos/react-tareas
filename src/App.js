@@ -1,7 +1,8 @@
 import React from 'react';
 import './style.css';
 import task from './task/task.json';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { useState } from 'react';
 
 //importacion de componentes
 import Tareas from './components/Tareas';
@@ -43,6 +44,14 @@ class App extends React.Component {
   };
 
   render() {
+    /* return (
+      <Router>
+        <Route path="/" render={() => <TaskForm addtask={this.addtask} />} />
+        <Route path="/post" component={<Post />} />
+      </Router>
+    );
+    */
+
     return (
       <div>
         <TaskForm addtask={this.addtask} />
@@ -51,7 +60,6 @@ class App extends React.Component {
           deleteTask={this.deleteTask}
           checkDone={this.checkDone}
         />
-
         <Post />
       </div>
     );
